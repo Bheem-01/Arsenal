@@ -5,7 +5,9 @@
   --blue: #0b6e99;
   --navy: #102a43;
   --paper: #ffffff;
-  --mist: #eef4f7;
+  --mist: #d9eef2;
+  --deep-teal: #075e73;
+  --sky: #8de3ed;
 }
 
 * {
@@ -15,7 +17,7 @@
 .email-body {
   margin: 0;
   padding: 0;
-  background: var(--mist);
+  background: var(--deep-teal);
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
 }
@@ -23,12 +25,12 @@
 .email-shell {
   width: 100%;
   background:
-    linear-gradient(135deg, rgba(0, 188, 235, 0.08), transparent 35%),
-    var(--mist);
+    linear-gradient(122deg, transparent 0 38%, rgba(141, 227, 237, 0.22) 38% 41%, transparent 41% 64%, rgba(0, 188, 235, 0.16) 64% 67%, transparent 67%),
+    linear-gradient(155deg, #063f53 0%, #08758a 48%, #0d3e68 100%);
 }
 
 .page-padding {
-  padding: 36px 16px;
+  padding: 48px 16px;
 }
 
 .email-card {
@@ -36,7 +38,7 @@
   max-width: 600px;
   overflow: hidden;
   background: var(--paper);
-  border: 1px solid #d8e4ea;
+  border: 1px solid rgba(255, 255, 255, 0.65);
   border-radius: 8px;
   box-shadow: 0 14px 36px rgba(16, 42, 67, 0.12);
 }
@@ -44,7 +46,7 @@
 .email-header {
   padding: 24px 32px;
   border-bottom: 4px solid var(--teal);
-  background: var(--paper);
+  background: linear-gradient(105deg, #ffffff 0%, #f4fbfc 72%, #d9f5f7 100%);
 }
 
 .content-width {
@@ -74,7 +76,7 @@
 .hero-image-cell {
   padding: 28px 32px 4px;
   text-align: center;
-  background: var(--paper);
+  background: #f4fbfc;
 }
 
 .hero-image {
@@ -85,11 +87,13 @@
   margin: 0 auto;
   object-fit: cover;
   border-radius: 6px;
-  background: #dceff4;
+  background: linear-gradient(135deg, #b9ecf0, #d8e9f7);
+  box-shadow: 0 8px 20px rgba(16, 42, 67, 0.16);
 }
 
 .content-section {
   padding: 28px 48px 40px;
+  background: var(--paper);
 }
 
 .content-section p {
@@ -295,7 +299,7 @@
 
 @media screen and (max-width: 520px) {
   .page-padding {
-    padding: 16px 8px;
+    padding: 24px 8px;
   }
 
   .email-header,
