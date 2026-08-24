@@ -1,0 +1,337 @@
+:root {
+  --ink: #172b4d;
+  --muted: #5d7180;
+  --teal: #00bceb;
+  --blue: #0b6e99;
+  --navy: #102a43;
+  --paper: #ffffff;
+  --mist: #eef4f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.email-body {
+  margin: 0;
+  padding: 0;
+  background: var(--mist);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.email-shell {
+  width: 100%;
+  background:
+    linear-gradient(135deg, rgba(0, 188, 235, 0.08), transparent 35%),
+    var(--mist);
+}
+
+.page-padding {
+  padding: 36px 16px;
+}
+
+.email-card {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid #d8e4ea;
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(16, 42, 67, 0.12);
+}
+
+.email-header {
+  padding: 24px 32px;
+  border-bottom: 4px solid var(--teal);
+  background: var(--paper);
+}
+
+.content-width {
+  width: 100%;
+}
+
+.logo-cell {
+  width: 50%;
+}
+
+.company-logo,
+.cisco-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.cisco-logo {
+  width: 110px;
+}
+
+.company-logo {
+  width: 150px;
+}
+
+.hero-image-cell {
+  padding: 28px 32px 4px;
+  text-align: center;
+  background: var(--paper);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 536px;
+  height: 220px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #dceff4;
+}
+
+.content-section {
+  padding: 28px 48px 40px;
+}
+
+.content-section p {
+  margin: 0 0 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.content-section .eyebrow {
+  margin-bottom: 12px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.content-section .greeting {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.content-section h1 {
+  margin: 0 0 18px;
+  color: var(--navy);
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.content-section .intro-copy {
+  margin-bottom: 26px;
+  color: #334e68;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.event-details,
+.agenda-table,
+.rsvp-callout {
+  width: 100%;
+}
+
+.event-details {
+  margin: 8px 0 30px;
+  border: 1px solid #d8e4ea;
+  border-radius: 6px;
+  background: #f7fafb;
+}
+
+.section-heading {
+  padding: 14px 16px 10px;
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.event-details .section-heading {
+  border-bottom: 1px solid #d8e4ea;
+}
+
+.detail-label,
+.detail-value {
+  padding: 10px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.detail-label {
+  width: 27%;
+  color: var(--muted);
+  font-weight: bold;
+}
+
+.detail-value {
+  color: var(--ink);
+}
+
+.agenda-table {
+  margin-bottom: 28px;
+}
+
+.agenda-table .section-heading {
+  padding-left: 0;
+}
+
+.agenda-item {
+  padding: 12px 0 12px 16px;
+  border-left: 3px solid var(--teal);
+  border-bottom: 1px solid #e4edf1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.agenda-item strong,
+.agenda-item span {
+  display: block;
+}
+
+.agenda-item strong {
+  color: var(--blue);
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.agenda-item span {
+  color: var(--ink);
+}
+
+.rsvp-callout {
+  margin-bottom: 18px;
+  border-left: 4px solid var(--teal);
+  background: #eaf8fb;
+}
+
+.rsvp-callout td {
+  padding: 18px 20px;
+}
+
+.rsvp-callout p {
+  margin: 0;
+}
+
+.rsvp-callout .callout-title {
+  margin-bottom: 5px;
+  color: var(--navy);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.rsvp-callout .callout-copy {
+  margin-bottom: 10px;
+  color: #466273;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rsvp-link {
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.availability-note {
+  color: var(--muted);
+  font-size: 13px !important;
+  line-height: 20px !important;
+}
+
+.button-table {
+  margin-top: 26px;
+}
+
+.button-cell {
+  background: var(--blue);
+  border-radius: 4px;
+}
+
+.button-cell a {
+  display: inline-block;
+  padding: 13px 24px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.content-section .signoff {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.email-footer {
+  padding: 22px 32px;
+  background: var(--navy);
+}
+
+.email-footer p {
+  margin: 0;
+  color: #dce8ef;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 520px) {
+  .page-padding {
+    padding: 16px 8px;
+  }
+
+  .email-header,
+  .hero-image-cell {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .content-section {
+    padding: 24px 24px 32px;
+  }
+
+  .company-logo {
+    width: 125px;
+  }
+
+  .cisco-logo {
+    width: 90px;
+  }
+
+  .hero-image {
+    height: 170px;
+  }
+
+  .content-section h1 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .detail-label,
+  .detail-value {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .detail-label {
+    width: 30%;
+  }
+}
