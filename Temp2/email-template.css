@@ -1,0 +1,304 @@
+:root {
+  --ink: #29313d;
+  --muted: #756f6a;
+  --coral: #e86f51;
+  --saffron: #f4b942;
+  --navy: #303746;
+  --deep: #202631;
+  --paper: #fffdf9;
+  --wash: #fff3e6;
+}
+
+* { box-sizing: border-box; }
+
+.email-body {
+  margin: 0;
+  padding: 0;
+  background: #303746;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-shell {
+  width: 100%;
+  background: linear-gradient(135deg, #303746 0%, #a84f4b 52%, #e8a33c 100%);
+}
+
+.page-padding { padding: 44px 16px; }
+
+.email-card {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 0 24px 52px rgba(2, 24, 45, 0.34);
+}
+
+.content-width { width: 100%; }
+
+.cover-section {
+  padding: 28px 32px 32px;
+  background: linear-gradient(145deg, var(--deep) 0%, #453544 56%, #a84f4b 100%);
+}
+
+.company-logo,
+.cisco-logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.company-logo { width: 140px; }
+.cisco-logo { width: 100px; }
+
+.cover-label {
+  margin: 50px 0 16px;
+  color: #ffd27b;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  line-height: 16px;
+}
+
+.cover-section h1 {
+  margin: 0;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 43px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: 45px;
+}
+
+.cover-section h1 span { color: #ffbd73; }
+
+.cover-summary {
+  max-width: 400px;
+  margin: 18px 0 26px;
+  color: #f8ded1;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 536px;
+  height: 178px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 210, 123, 0.7);
+  border-radius: 6px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-section { padding: 34px 48px 30px; background: var(--paper); }
+
+.greeting {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.lead-copy {
+  margin: 0 0 28px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.section-kicker,
+.rsvp-label {
+  margin: 0 0 12px;
+  color: #c85843;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.details-grid {
+  border-top: 1px solid #ead8c8;
+  border-bottom: 1px solid #ead8c8;
+}
+
+.detail-cell {
+  width: 50%;
+  padding: 17px 16px 17px 0;
+  vertical-align: top;
+}
+
+.detail-cell + .detail-cell {
+  padding-left: 20px;
+  border-left: 1px solid #ead8c8;
+}
+
+.detail-cell span,
+.detail-cell strong {
+  display: block;
+}
+
+.detail-label {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 10px !important;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 15px !important;
+}
+
+.detail-cell strong {
+  margin-bottom: 3px;
+  color: #303746;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.detail-cell span:last-child { color: var(--muted); font-size: 13px; line-height: 19px; }
+
+.agenda-section { padding: 26px 48px 30px; background: var(--wash); }
+
+.agenda-panel {
+  border: 1px solid #ead8c8;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 8px 18px rgba(32, 38, 49, 0.06);
+}
+
+.agenda-lead {
+  padding: 18px 20px 16px;
+  background: linear-gradient(180deg, #fffaf5 0%, #fff4e8 100%);
+  border-bottom: 1px solid #ead8c8;
+}
+
+.agenda-kicker {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #c85843;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.agenda-lead strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #303746;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.agenda-lead p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.agenda-list {
+  width: 100%;
+}
+
+.agenda-list td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #ead8c8;
+  vertical-align: top;
+}
+
+.agenda-list tr:last-child td {
+  border-bottom: 0;
+}
+
+.agenda-time {
+  width: 32%;
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.agenda-copy {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rsvp-section {
+  padding: 32px 48px 36px;
+  background: linear-gradient(110deg, var(--coral), #f29a55);
+}
+
+.rsvp-label { margin-bottom: 8px; color: #fff7df; }
+
+.rsvp-section h2 {
+  margin: 0 0 9px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 34px;
+}
+
+.rsvp-section p:not(.rsvp-label) {
+  max-width: 430px;
+  margin: 0 0 20px;
+  color: #fff5e8;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.rsvp-link {
+  display: inline-block;
+  padding: 12px 17px;
+  border-radius: 3px;
+  background: var(--deep);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.rsvp-link span { margin-left: 8px; color: #ffd27b; font-size: 18px; }
+
+.footer-section { padding: 22px 48px 26px; background: var(--deep); color: #f1ddd2; }
+.footer-section p { margin: 0; font-size: 12px; line-height: 18px; }
+.footer-section strong { color: #ffffff; }
+.footer-section .footer-note { margin-top: 14px; color: #bca49b; font-size: 11px; }
+
+@media screen and (max-width: 520px) {
+  .page-padding { padding: 22px 8px; }
+  .cover-section { padding: 22px 22px 24px; }
+  .cover-label { margin-top: 40px; }
+  .cover-section h1 { font-size: 36px; line-height: 39px; }
+  .hero-image { height: 150px; }
+  .welcome-section,
+  .agenda-section { padding-right: 24px; padding-left: 24px; }
+  .rsvp-section { padding: 28px 24px 30px; }
+  .detail-cell { padding-right: 8px; }
+  .detail-cell + .detail-cell { padding-left: 12px; }
+  .agenda-section { padding-right: 24px; padding-left: 24px; }
+  .agenda-lead,
+  .agenda-list td { padding-right: 16px; padding-left: 16px; }
+  .agenda-time,
+  .agenda-copy {
+    display: block;
+    width: 100%;
+  }
+  .agenda-time {
+    padding-bottom: 4px;
+  }
+  .agenda-copy {
+    padding-top: 0;
+  }
+  .footer-section { padding-right: 24px; padding-left: 24px; }
+}

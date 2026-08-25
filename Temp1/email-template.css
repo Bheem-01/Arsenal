@@ -38,15 +38,15 @@
   max-width: 600px;
   overflow: hidden;
   background: var(--paper);
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 8px;
-  box-shadow: 0 14px 36px rgba(16, 42, 67, 0.12);
+  box-shadow: 0 22px 48px rgba(3, 29, 54, 0.3);
 }
 
 .email-header {
-  padding: 24px 32px;
-  border-bottom: 4px solid var(--teal);
-  background: linear-gradient(105deg, #ffffff 0%, #f4fbfc 72%, #d9f5f7 100%);
+  padding: 26px 32px 20px;
+  border-bottom: 5px solid var(--teal);
+  background: linear-gradient(105deg, #ffffff 0%, #f4fbfc 58%, #c8f0f2 100%);
 }
 
 .content-width {
@@ -55,6 +55,18 @@
 
 .logo-cell {
   width: 50%;
+}
+
+.header-label {
+  padding-top: 20px;
+  color: var(--blue);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .company-logo,
@@ -74,7 +86,7 @@
 }
 
 .hero-image-cell {
-  padding: 28px 32px 4px;
+  padding: 24px 32px 18px;
   text-align: center;
   background: #f4fbfc;
 }
@@ -87,13 +99,69 @@
   margin: 0 auto;
   object-fit: cover;
   border-radius: 6px;
+  border: 1px solid #c8e3e8;
   background: linear-gradient(135deg, #b9ecf0, #d8e9f7);
   box-shadow: 0 8px 20px rgba(16, 42, 67, 0.16);
 }
 
+.event-banner {
+  padding: 0 32px;
+  background: var(--navy);
+}
+
+.banner-date {
+  width: 88px;
+  padding: 14px 12px;
+  border-right: 1px solid rgba(141, 227, 237, 0.35);
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner-date strong,
+.banner-date span,
+.banner-copy strong,
+.banner-copy span {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-date strong {
+  color: var(--sky);
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.banner-date span {
+  margin-top: 3px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+
+.banner-copy {
+  padding: 14px 0 14px 18px;
+  vertical-align: middle;
+}
+
+.banner-copy strong {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.banner-copy span {
+  margin-top: 3px;
+  color: #bcecf0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
 .content-section {
   padding: 28px 48px 40px;
-  background: var(--paper);
+  background: #ffffff;
 }
 
 .content-section p {
@@ -119,9 +187,11 @@
 }
 
 .content-section h1 {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
+  padding-left: 16px;
+  border-left: 5px solid var(--teal);
   color: var(--navy);
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   line-height: 38px;
 }
@@ -131,6 +201,10 @@
   color: #334e68;
   font-size: 17px;
   line-height: 28px;
+}
+
+.content-section .intro-copy strong {
+  color: var(--blue);
 }
 
 .event-details,
@@ -143,7 +217,7 @@
   margin: 8px 0 30px;
   border: 1px solid #d8e4ea;
   border-radius: 6px;
-  background: #f7fafb;
+  background: linear-gradient(105deg, #f2fafb, #f8fbfc);
 }
 
 .section-heading {
@@ -188,6 +262,28 @@
   padding-left: 0;
 }
 
+.agenda-feature {
+  padding: 16px 0 14px;
+  border-bottom: 1px solid #e4edf1;
+}
+
+.agenda-feature-title {
+  margin: 0 0 6px;
+  color: var(--navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.agenda-feature-copy {
+  margin: 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 .agenda-item {
   padding: 12px 0 12px 16px;
   border-left: 3px solid var(--teal);
@@ -215,7 +311,7 @@
 .rsvp-callout {
   margin-bottom: 18px;
   border-left: 4px solid var(--teal);
-  background: #eaf8fb;
+  background: linear-gradient(105deg, #e4f8f8, #edf7fc);
 }
 
 .rsvp-callout td {
@@ -306,6 +402,19 @@
   .hero-image-cell {
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  .event-banner {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .banner-date {
+    width: 72px;
+  }
+
+  .banner-copy {
+    padding-left: 12px;
   }
 
   .content-section {
